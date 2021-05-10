@@ -9,9 +9,6 @@ public class OsrsDbApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(OsrsDbApplication.class, args);
 	}
-
-
+	
 
 }
- // no u
-// ok pato
