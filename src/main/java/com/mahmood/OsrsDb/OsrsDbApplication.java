@@ -10,4 +10,6 @@ public class OsrsDbApplication {
 		SpringApplication.run(OsrsDbApplication.class, args);
 	}
 
+
+
 }
