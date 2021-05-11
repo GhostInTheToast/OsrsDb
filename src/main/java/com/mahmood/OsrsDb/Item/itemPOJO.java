@@ -1,4 +1,4 @@
-package com.mahmood.OsrsDb;
+package com.mahmood.OsrsDb.Item;
 
 public class itemPOJO
 {
@@ -7,6 +7,15 @@ public class itemPOJO
     private int highTime; // UNIX time
     private int low;
     private int lowTime; // UNIX time
+
+    public itemPOJO(int id, int high, int highTime, int low, int lowTime)
+    {
+        this.id = id;
+        this.high = high;
+        this.highTime = highTime;
+        this.low = low;
+        this.lowTime = lowTime;
+    }
 
     public int getId()
     {
