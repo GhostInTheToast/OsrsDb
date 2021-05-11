@@ -1,5 +1,6 @@
 package com.mahmood.OsrsDb.Item;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,9 +12,16 @@ import java.util.List;
 public class ItemController
 {
 
+    private final ItemIdService itemIdService;
+
+    @Autowired
+    public ItemController(ItemIdService itemIdService) {
+        this.itemIdService = itemIdService;
+    }
+
     @GetMapping
     public List<ItemIdPOJO> getItemId() {
-        return List.of(new ItemIdPOJO(1,"fire rune"));
+        return itemIdService.getItemId();
     }
 
 }
