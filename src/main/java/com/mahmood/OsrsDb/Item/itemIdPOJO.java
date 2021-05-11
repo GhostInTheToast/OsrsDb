@@ -1,9 +1,20 @@
 package com.mahmood.OsrsDb.Item;
 
+
 public class itemIdPOJO
 {
     private int id;
     private String name;
+
+    public itemIdPOJO(int id)
+    {
+        this.id = id;
+    }
+
+    public itemIdPOJO(String name)
+    {
+        this.name = name;
+    }
 
     public itemIdPOJO(int id, String name)
     {
