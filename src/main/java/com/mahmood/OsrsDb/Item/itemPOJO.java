@@ -66,4 +66,16 @@ public class itemPOJO
     {
         this.lowTime = lowTime;
     }
+
+    @Override
+    public String toString()
+    {
+        return "itemPOJO{" +
+                "id=" + id +
+                ", high=" + high +
+                ", highTime=" + highTime +
+                ", low=" + low +
+                ", lowTime=" + lowTime +
+                '}';
+    }
 }
