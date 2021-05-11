@@ -1,22 +1,25 @@
 package com.mahmood.OsrsDb.Item;
 
-
-public class itemIdPOJO
+public class ItemIdPOJO
 {
     private int id;
     private String name;
 
-    public itemIdPOJO(int id)
+    public ItemIdPOJO()
+    {
+    }
+
+    public ItemIdPOJO(int id)
     {
         this.id = id;
     }
 
-    public itemIdPOJO(String name)
+    public ItemIdPOJO(String name)
     {
         this.name = name;
     }
 
-    public itemIdPOJO(int id, String name)
+    public ItemIdPOJO(int id, String name)
     {
         this.id = id;
         this.name = name;
@@ -45,9 +48,10 @@ public class itemIdPOJO
     @Override
     public String toString()
     {
-        return "itemIdPOJO{" +
+        return "ItemIdPOJO{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 '}';
     }
 }
+
